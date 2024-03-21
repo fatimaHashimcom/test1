@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURD</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body >
+
+    <div class="m-5 m-auto my-5 w-50 shadow-lg p-5 " >
+        <h1>CRUD SYSTEM</h1>
+        <label for="productName" class="my-2">productName</label>
+        <input type="text"  name="productName" class="form-control"id="productName" >
+        <label for="productCategory" class="my-2">productCategory</label>
+        <input type="text"  name="productCategory" class="form-control"id="productCategory" >
+        <label for="producPrice" class="my-2">producPrice</label>
+        <input type="number"  name="producPrice" class="form-control"id="producPrice" >
+        <label for="productDescription" class="my-2">productDescription</label>
+        <textarea type="text"  name="productDescription" cols="10" rows="4"  class="form-control"id="productDescription" ></textarea>
+     <button onclick="addProduct()" class="btn btn-outline-info my-3">Add</button>
+    </div>
+    
+    <div class="container">
+        <input id="searchinput" onkeyup="search()"  type="text" class=" w-25 form-control btn-outline-info m-auto" placeholder="search ">
+<div class=" w-50 shadow m-auto my-3">
+<table class="table table-striped table-hover ">
+        <thead>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Delete</th>
+            <th>Updata</th>
+
+        </thead>
+        <tbody id="tbody">
+        
+        </tbody>
+       </table>
+    </div>
+    </div>
+    
+<script src="js/jquery-3.6.3.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
